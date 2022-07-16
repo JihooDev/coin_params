@@ -1,0 +1,73 @@
+.list {
+  width: 100%;
+}
+
+.list > nav > ul {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #3333ff;
+  padding: 5px;
+  border-radius: 1rem;
+}
+
+.list > nav > ul > li {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+li > img {
+  width: 1.5rem;
+}
+
+#redirect {
+  cursor: pointer;
+  width: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+#redirect:hover {
+  transform: rotate(180deg);
+}
+
+li > img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.num {
+  cursor: pointer;
+  width: 5%;
+}
+
+.list > nav > ul > .name {
+  width: 10%;
+  text-align: left;
+}
+
+.price {
+  width: 10%;
+}
+
+.day {
+  width: 20%;
+}
+
+.week {
+  width: 20%;
+}
+
+.market {
+  width: 20%;
+}
+
+.volume {
+  width: 20%;
+}
