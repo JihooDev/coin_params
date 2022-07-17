@@ -1,0 +1,57 @@
+.coin_detail {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 130rem;
+}
+
+.coin_about_box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10rem;
+}
+
+.left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.left > img {
+	width: 3rem;
+}
+
+.left > h1 {
+	font-size: 3rem;
+	font-weight: normal;
+	margin-left: 1rem;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: chartreuse;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.right > h1 {
+	font-size: 2rem;
+}
+
+.right > p {
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+}
+
+.grape_data {
+	padding: 3rem;
+	margin-bottom: 3rem;
+}

@@ -10,6 +10,10 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 const CoinDetail = ({ data }) => {
 	const { id } = useParams();
 	const detailData = data.find(it => parseInt(it.id) === parseInt(id));
+
+	useEffect(() => {
+		console.log(detailData);
+	}, []);
 	const price = detailData.quote.USD;
 	const dayList = [
 		{ id: 0, days: '90일' },
@@ -71,9 +75,21 @@ const CoinDetail = ({ data }) => {
 
 	return (
 		<div className={styles.coin_detail}>
-			<h1>{detailData.name}</h1>
-			<img src={`https://s2.coinmarketcap.com/static/img/coins/64x64/${id}.png`} alt="logo_Img" />
-			<Line data={coinData} options={options} />
+			<div className={styles.container}>
+				<div className={styles.coin_about_box}>
+					<div className={styles.left}>
+						<img src={`https://s2.coinmarketcap.com/static/img/coins/64x64/${id}.png`} alt="logo_Img" />
+						<h1>{detailData.name}</h1>
+					</div>
+					<div className={styles.right}>
+						<h1>시가 총액</h1>
+						<p>${detailData.quote.USD.market_cap}</p>
+					</div>
+				</div>
+				<div className={styles.grape_data}>
+					<Line data={coinData} options={options} />
+				</div>
+			</div>
 		</div>
 	);
 };
